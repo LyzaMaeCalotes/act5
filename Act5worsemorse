@@ -14,7 +14,7 @@ void main(){
 
                       "-.--", "--.."];
 
-    var english = ["A", "B", "C", "D", "E", "F",
+    var alpha = ["A", "B", "C", "D", "E", "F",
 
                    "G", "H", "I", "J", "K", "L",
 
@@ -26,11 +26,11 @@ void main(){
 
     var str = stdin.readLineSync();
 
-    morse_decode(str, "", morse_code, english);
+    morse_decode(str, "", morse_code, alpha);
 
 }
 
-void morse_decode(var rawString, var translatedString, var morse_code, var english){
+void morse_decode(var rawString, var translatedString, var morse_code, var alpha){
 
   if(rawString.length == 0)
 
@@ -42,7 +42,7 @@ void morse_decode(var rawString, var translatedString, var morse_code, var engli
 
       if(rawString.startsWith(morse_code[i])){
 
-        var translated = translatedString + english[i];
+        var translated = translatedString + alpha[i];
 
         var rawStringLeft = rawString.substring(morse_code[i].length);
 
