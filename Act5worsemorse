@@ -46,7 +46,7 @@ void morse_decode(var rawString, var translatedString, var morse_code, var alpha
 
         var rawStringLeft = rawString.substring(morse_code[i].length);
 
-        morse_decode(rawStringLeft, translated, morse_code, english);
+        morse_decode(rawStringLeft, translated, morse_code, alpha);
 
       }
 
